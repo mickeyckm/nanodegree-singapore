@@ -48,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This method is called when there is a click on the question two checkboxes
+     * @param view
+     */
     public void qnTwoCheckboxClicked(View view) {
 
         switch (view.getId()) {
@@ -79,6 +83,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This method is called when there is a click on the question three checkboxes
+     * @param view
+     */
     public void qnThreeCheckboxClicked(View view) {
 
         switch (view.getId()) {
@@ -110,6 +118,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This method is called when there is a click on the question four radio buttons
+     * @param view
+     */
     public void qnFourRadioClicked(View view) {
         switch (view.getId()) {
             case R.id.qn4_yes:
@@ -121,13 +133,19 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method is called when the user submit the quiz
+     * @param view
+     */
     public void submitQuiz(View view) {
         hideKeyboard(MainActivity.this);
 
         Integer score = 0;
 
-        // Validate question one
-        String qnOneAnswer = String.valueOf(qnOneAnswerEditText.getText());
+        /**
+         * This is where we validate question one
+         */
+        String qnOneAnswer = String.valueOf(qnOneAnswerEditText.getText()).trim();
         if (qnOneAnswer.isEmpty()) {
             Toast.makeText(MainActivity.this, "You cannot leave question 1 blank", Toast.LENGTH_LONG).show();
             return;
@@ -136,7 +154,9 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        // Validate question two
+        /**
+         * This is where we validate question two
+         */
         if (((Boolean) qnTwoCheckBoxes.get("red")) &&
                 !((Boolean) qnTwoCheckBoxes.get("blue")) &&
                 !((Boolean) qnTwoCheckBoxes.get("purple")) &&
@@ -146,7 +166,9 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        // Validate question three
+        /**
+         * This is where we validate question three
+         */
         if (((Boolean) qnThreeCheckBoxes.get("english")) &&
                 !((Boolean) qnThreeCheckBoxes.get("spanish")) &&
                 ((Boolean) qnThreeCheckBoxes.get("malay")) &&
@@ -156,7 +178,9 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        // Validate question four
+        /**
+         * This is where we validate question four
+         */
         if (qnFourRadio != null) {
             if (!qnFourRadio) {
                 score += 1;
@@ -167,7 +191,9 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        // Display final score
+        /**
+         * This is where we display the score
+         */
         String message = "Total score: " + String.valueOf(score) + "/4";
         if (score == 4) {
             message += ". Congrats, you got all the answers correct!";
@@ -176,6 +202,10 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
     }
 
+    /**
+     * This method is called to hide the keyboard
+     * @param activity
+     */
     public static void hideKeyboard(Activity activity) {
         View v = activity.getWindow().getCurrentFocus();
         if (v != null) {

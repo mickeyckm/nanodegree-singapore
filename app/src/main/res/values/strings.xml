@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Singapore</string>
+    <string name="question_one">Which continent does Singapore located at?</string>
+    <string name="question_two">What are the colours found on Singapore flag?</string>
+    <string name="answer_two_red">Red</string>
+    <string name="answer_two_blue">Blue</string>
+    <string name="answer_two_purple">Purple</string>
+    <string name="answer_two_yellow">Yellow</string>
+    <string name="answer_two_green">Green</string>
+    <string name="answer_two_white">White</string>
+    <string name="question_three">Which languages are official languages of Singapore?</string>
+    <string name="answer_three_english">English</string>
+    <string name="answer_three_spanish">Spanish</string>
+    <string name="answer_three_malay">Malay</string>
+    <string name="answer_three_mandarin">Mandarin</string>
+    <string name="answer_three_tamil">Tamil</string>
+    <string name="answer_three_japanese">Japanese</string>
+    <string name="question_four">Can you legally purchase/sell chewing gum in Singapore?</string>
+    <string name="answer_four_yes">Yes</string>
+    <string name="answer_four_no">No</string>
+    <string name="submit">Submit</string>
 </resources>

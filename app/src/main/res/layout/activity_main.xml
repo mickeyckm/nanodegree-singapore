@@ -28,7 +28,7 @@
                     android:id="@+id/qn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Which continent does Singapore located at?"
+                    android:text="@string/question_one"
                     android:layout_weight="1"/>
 
                 <EditText
@@ -54,7 +54,7 @@
                     android:id="@+id/qn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="What are the colours found on Singapore flag?"
+                    android:text="@string/question_two"
                     android:layout_weight="1"/>
 
                 <LinearLayout
@@ -71,21 +71,21 @@
                             android:id="@+id/qn2_red"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Red"
+                            android:text="@string/answer_two_red"
                             android:onClick="qnTwoCheckboxClicked" />
                         <CheckBox
                             android:id="@+id/qn2_blue"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/qn2_red"
-                            android:text="Blue"
+                            android:text="@string/answer_two_blue"
                             android:onClick="qnTwoCheckboxClicked" />
                         <CheckBox
                             android:id="@+id/qn2_purple"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/qn2_blue"
-                            android:text="Purple"
+                            android:text="@string/answer_two_purple"
                             android:onClick="qnTwoCheckboxClicked"/>
 
                     </RelativeLayout>
@@ -99,21 +99,21 @@
                             android:id="@+id/qn2_yellow"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Yellow"
+                            android:text="@string/answer_two_yellow"
                             android:onClick="qnTwoCheckboxClicked" />
                         <CheckBox
                             android:id="@+id/qn2_green"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/qn2_yellow"
-                            android:text="Green"
+                            android:text="@string/answer_two_green"
                             android:onClick="qnTwoCheckboxClicked" />
                         <CheckBox
                             android:id="@+id/qn2_white"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/qn2_green"
-                            android:text="White"
+                            android:text="@string/answer_two_white"
                             android:onClick="qnTwoCheckboxClicked" />
 
                     </RelativeLayout>
@@ -135,7 +135,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Which languages are official languages of Singapore?"
+                    android:text="@string/question_three"
                     android:layout_weight="1"/>
 
                 <LinearLayout
@@ -152,21 +152,21 @@
                             android:id="@+id/qn3_english"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="English"
+                            android:text="@string/answer_three_english"
                             android:onClick="qnThreeCheckboxClicked" />
                         <CheckBox
                             android:id="@+id/qn3_spanish"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/qn3_english"
-                            android:text="Spanish"
+                            android:text="@string/answer_three_spanish"
                             android:onClick="qnThreeCheckboxClicked" />
                         <CheckBox
                             android:id="@+id/qn3_malay"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/qn3_spanish"
-                            android:text="Malay"
+                            android:text="@string/answer_three_malay"
                             android:onClick="qnThreeCheckboxClicked" />
 
                     </RelativeLayout>
@@ -180,21 +180,21 @@
                             android:id="@+id/qn3_mandarin"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Mandarin"
+                            android:text="@string/answer_three_mandarin"
                             android:onClick="qnThreeCheckboxClicked" />
                         <CheckBox
                             android:id="@+id/qn3_tamil"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/qn3_mandarin"
-                            android:text="Tamil"
+                            android:text="@string/answer_three_tamil"
                             android:onClick="qnThreeCheckboxClicked" />
                         <CheckBox
                             android:id="@+id/qn3_japanese"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/qn3_tamil"
-                            android:text="Japanese"
+                            android:text="@string/answer_three_japanese"
                             android:onClick="qnThreeCheckboxClicked" />
 
                     </RelativeLayout>
@@ -216,7 +216,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Can you legally purchase/sell chewing gum in Singapore?"
+                    android:text="@string/question_four"
                     android:layout_weight="1"/>
 
                 <RadioGroup
@@ -226,13 +226,13 @@
                         android:id="@+id/qn4_yes"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Yes"
+                        android:text="@string/answer_four_yes"
                         android:onClick="qnFourRadioClicked"/>
                     <RadioButton
                         android:id="@+id/qn4_no"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="No"
+                        android:text="@string/answer_four_no"
                         android:onClick="qnFourRadioClicked"/>
                 </RadioGroup>
 
@@ -246,7 +246,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
-                android:text="Submit"
+                android:text="@string/submit"
                 android:onClick="submitQuiz"/>
 
         </LinearLayout>
